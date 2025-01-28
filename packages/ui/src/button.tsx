@@ -14,7 +14,7 @@ export const Button = (props: ButtonProps): React.ReactElement => {
         <button
             type="button"
             className={clsx(
-                'border-amber-700 appearance-none border-2 rounded-lg px-4 py-2 bg-transparent transition-colors',
+                'border-amber-700 border-2 rounded-lg px-4 py-2 bg-transparent transition-colors',
                 className,
             )}
             onClick={onClick}
