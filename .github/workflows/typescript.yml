@@ -1,0 +1,27 @@
+name: TypeScript
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+concurrency:
+    group: ${{ github.ref }}-typescript
+    cancel-in-progress: true
+
+jobs:
+    type-check:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v3
+
+            - name: Setup Node.js and dependencies
+              uses: ./.github/actions/setup-node-and-deps
+
+            - name: Run TypeScript type check
+              run: pnpm run types-check

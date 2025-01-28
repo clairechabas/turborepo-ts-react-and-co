@@ -1,0 +1,8 @@
+{
+    "extends": "@base/config-ts/react.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "jsx": "react-jsx"
+    },
+    "include": ["src"]
+}

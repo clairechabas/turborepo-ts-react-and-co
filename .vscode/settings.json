@@ -1,0 +1,40 @@
+{
+    "editor.tabSize": 4,
+    "search.followSymlinks": false,
+    "search.exclude": {
+        // Exclude output directories
+        "**/dist": true,
+        "**/static": true,
+        // Exclude installed dependencies from searches too
+        "**/node_modules": true
+    },
+    "typescript.tsc.autoDetect": "off",
+    "typescript.tsserver.log": "off",
+    // Format on save
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "prettier.documentSelectors": ["{**/*,*}.{md,mdx,yml,yaml,html,css}"],
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[snippets]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.activeIconPack": "react",
+    "material-icon-theme.folders.associations": {
+        "config-ts": "config",
+        "config-eslint": "config",
+        "config-css": "css",
+        "utils-ts": "utils"
+    }
+}

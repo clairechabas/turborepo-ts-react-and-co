@@ -1,0 +1,26 @@
+{
+    "name": "turborepo-ts-react",
+    "private": true,
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "lint:fix": "turbo run lint -- --fix",
+        "format": "prettier ./ --ignore-unknown --write",
+        "format:check": "prettier ./ --ignore-unknown --list-different",
+        "types-check": "turbo run types-check"
+    },
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
+    "devDependencies": {
+        "prettier": "^3.4.2",
+        "turbo": "^2.3.4",
+        "typescript": "^5.7.3"
+    },
+    "packageManager": "pnpm@9.0.0",
+    "engines": {
+        "node": ">=18"
+    }
+}
