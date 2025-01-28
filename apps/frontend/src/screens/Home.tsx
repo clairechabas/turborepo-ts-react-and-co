@@ -1,4 +1,5 @@
 import { Button } from '@base/ui';
+import { IconPlus } from 'justd-icons';
 import React from 'react';
 
 export function Home() {
@@ -9,7 +10,13 @@ export function Home() {
             <h1>Welcome!</h1>
 
             <div className="flex flex-col items-center gap-5">
-                <Button onClick={() => setCount((count) => count + 1)}>Increment</Button>
+                <Button
+                    intent="secondary"
+                    size="small"
+                    onPress={() => setCount((count) => count + 1)}
+                >
+                    <IconPlus /> Increment
+                </Button>
                 <p>
                     Count: <code>{count}</code>
                 </p>
