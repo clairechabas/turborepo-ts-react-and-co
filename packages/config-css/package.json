@@ -5,7 +5,8 @@
     "type": "module",
     "exports": {
         "./tailwind": "./tailwind.config.ts",
-        "./config.css": "./config.css"
+        "./config.css": "./config.css",
+        "./theme.css": "./theme.css"
     },
     "scripts": {
         "types-check": "tsc --noEmit"
@@ -15,5 +16,9 @@
         "@base/config-ts": "workspace:*",
         "tailwindcss": "^4.0.0",
         "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "justd-icons": "^1.10.24",
+        "tailwindcss-animate": "^1.0.7"
     }
 }

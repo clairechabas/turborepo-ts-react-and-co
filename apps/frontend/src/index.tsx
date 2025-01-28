@@ -1,11 +1,12 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import '@base/config-css/config.css';
+import '@base/config-css/theme.css';
 import { assertIsDefined } from '@base/utils-ts';
 
 /** Tanstack Router */
 import { RouterProvider, createRouter } from '@tanstack/react-router';
 import { routeTree } from './routeTree.gen';
+import AppLayout from './components/AppLayout';
 
 const router = createRouter({ routeTree });
 
@@ -26,7 +27,9 @@ if (!rootElement.innerHTML) {
 
     root.render(
         <StrictMode>
-            <RouterProvider router={router} />
+            <AppLayout>
+                <RouterProvider router={router} />
+            </AppLayout>
         </StrictMode>,
     );
 }
