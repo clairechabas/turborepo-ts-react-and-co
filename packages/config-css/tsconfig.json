@@ -1,0 +1,8 @@
+{
+    "extends": "@base/config-ts/react.json",
+    "compilerOptions": {
+        "outDir": "dist"
+    },
+    "include": ["tailwind.config.ts"],
+    "exclude": ["node_modules", "dist"]
+}

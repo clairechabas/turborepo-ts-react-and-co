@@ -1,8 +1,8 @@
-# 🍰 Minimal Turborepo TS React Starter
+# 🥧 Turborepo TS React & Co Starter
 
-This is a minimal [Turborepo](https://turbo.build/repo/docs) starter set up to build a monorepo application with TypeScript.
+This is a [Turborepo](https://turbo.build/repo/docs) starter set up to build a monorepo application with TypeScript.
 
-It's built to be the most simple base possible to start building with your tools of choice. Very little decisions were made to let you setup your own tools. As such it includes a single app which is a React app built with Vite and simple packages to help kickstart your project faster.
+It includes a frontend application and a design system package setup with great tools to kickstart your project faster.
 
 ## 🚀 Get started
 
@@ -22,12 +22,12 @@ pnpm dev
 
 This project includes two main folders:
 - `apps`: applications to be deployed and consumed
-    - `frontend`: a React application built with [Vite](https://vite.dev/)
+    - `frontend`: a React application built with [Vite](https://vite.dev/) and using Tailwind CSS, React Router, Tanstack Query, E2E tests with Playwrite and visual regression test with Argos.
 - `packages`: development packages used to build the applications in `apps`
     - `@base/config-eslint`: `eslint` config
     - `@base/config-ts`: `tsconfig.json` used throughout the monorepo
-    - `@base/ui`: a starter package for a React component library
     - `@base/utils-ts`: a library of TS utilities
+    - `@base/ui`: a starter package for a React component library using Storybook. It includes a few React components built with React Aria and Tailwind form Justd librarys
 
 ### 🧰 Tools
 
