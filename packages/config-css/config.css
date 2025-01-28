@@ -51,6 +51,11 @@ ol {
     padding: 0;
     list-style-type: none;
 }
+
+fieldset {
+    padding: 0;
+    margin: 0;
+}
 /* -- END OF RESET -- */
 
 /* -- GLOBALS -- */
@@ -104,12 +109,6 @@ button,
 [aria-disabled='true'],
 :disabled {
     cursor: not-allowed;
-}
-
-/* Reset fieldset padding and margin */
-fieldset {
-    padding: 0;
-    margin: 0;
 }
 /** END OF GLOBALS */
 
