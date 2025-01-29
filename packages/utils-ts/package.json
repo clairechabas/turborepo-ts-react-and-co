@@ -1,5 +1,5 @@
 {
-    "name": "@base/utils-ts",
+    "name": "@mt/utils-ts",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -8,8 +8,8 @@
         "types-check": "tsc --noEmit"
     },
     "devDependencies": {
-        "@base/config-eslint": "workspace:*",
-        "@base/config-ts": "workspace:*",
+        "@mt/config-eslint": "workspace:*",
+        "@mt/config-ts": "workspace:*",
         "typescript": "^5.7.3"
     }
 }

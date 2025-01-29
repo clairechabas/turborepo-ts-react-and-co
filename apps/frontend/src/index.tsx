@@ -1,20 +1,8 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import '@base/config-css/config.css';
-import { assertIsDefined } from '@base/utils-ts';
-
-/** Tanstack Router */
-import { RouterProvider, createRouter } from '@tanstack/react-router';
-import { routeTree } from './routeTree.gen';
-
-const router = createRouter({ routeTree });
-
-// Register the router instance for type safety
-declare module '@tanstack/react-router' {
-    interface Register {
-        router: typeof router;
-    }
-}
+import '@mt/config-css/config.css';
+import { assertIsDefined } from '@mt/utils-ts';
+import { AppLayout } from './components';
 
 /** Render the application */
 const rootElement = document.getElementById('root');
@@ -26,7 +14,7 @@ if (!rootElement.innerHTML) {
 
     root.render(
         <StrictMode>
-            <RouterProvider router={router} />
+            <AppLayout />
         </StrictMode>,
     );
 }

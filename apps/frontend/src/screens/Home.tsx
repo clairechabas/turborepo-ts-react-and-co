@@ -1,4 +1,4 @@
-import { Button } from '@base/ui';
+import { Button } from '@mt/ui';
 import React from 'react';
 
 export function Home() {

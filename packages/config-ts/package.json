@@ -1,5 +1,5 @@
 {
-    "name": "@base/config-ts",
+    "name": "@mt/config-ts",
     "version": "0.0.0",
     "private": true,
     "license": "MIT",

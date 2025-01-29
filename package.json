@@ -1,5 +1,5 @@
 {
-    "name": "turborepo-ts-react",
+    "name": "music-tomorrow",
     "private": true,
     "scripts": {
         "build": "turbo run build",

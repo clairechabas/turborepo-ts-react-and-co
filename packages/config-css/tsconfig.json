@@ -1,5 +1,5 @@
 {
-    "extends": "@base/config-ts/react.json",
+    "extends": "@mt/config-ts/react.json",
     "compilerOptions": {
         "outDir": "dist"
     },

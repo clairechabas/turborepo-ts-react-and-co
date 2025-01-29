@@ -12,21 +12,18 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@base/ui": "workspace:*",
-        "@base/utils-ts": "workspace:*",
-        "@tanstack/react-router": "^1.97.25",
+        "@mt/ui": "workspace:*",
+        "@mt/utils-ts": "workspace:*",
         "clsx": "^2.1.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     },
     "devDependencies": {
-        "@base/config-css": "workspace:*",
-        "@base/config-eslint": "workspace:*",
-        "@base/config-ts": "workspace:*",
+        "@mt/config-css": "workspace:*",
+        "@mt/config-eslint": "workspace:*",
+        "@mt/config-ts": "workspace:*",
         "@eslint/js": "^9.17.0",
         "@tailwindcss/vite": "^4.0.0",
-        "@tanstack/router-devtools": "^1.97.25",
-        "@tanstack/router-plugin": "^1.97.25",
         "@types/react": "^19.0.8",
         "@types/react-dom": "^19.0.3",
         "@vitejs/plugin-react": "^4.3.4",

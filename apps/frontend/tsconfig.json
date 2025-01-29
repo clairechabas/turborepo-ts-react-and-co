@@ -1,5 +1,5 @@
 {
-    "extends": "@base/config-ts/base.strict.json",
+    "extends": "@mt/config-ts/base.strict.json",
     "compilerOptions": {
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
         "target": "ESNext",

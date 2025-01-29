@@ -35,6 +35,7 @@
         "config-ts": "config",
         "config-eslint": "config",
         "config-css": "css",
-        "utils-ts": "utils"
+        "utils-ts": "utils",
+        "compose-ui": "ui"
     }
 }

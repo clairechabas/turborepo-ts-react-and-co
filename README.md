@@ -1,8 +1,6 @@
-# 🥧 Turborepo TS React & Co Starter
+# 🎧 Music Tomorrow
 
-This is a [Turborepo](https://turbo.build/repo/docs) starter set up to build a monorepo application with TypeScript.
-
-It includes a frontend application and a design system package setup with great tools to kickstart your project faster.
+A monorepo powering Music Tomorrow's application.
 
 ## 🚀 Get started
 
@@ -24,10 +22,11 @@ This project includes two main folders:
 - `apps`: applications to be deployed and consumed
     - `frontend`: a React application built with [Vite](https://vite.dev/) and using Tailwind CSS, React Router, Tanstack Query, E2E tests with Playwrite and visual regression test with Argos.
 - `packages`: development packages used to build the applications in `apps`
-    - `@base/config-eslint`: `eslint` config
-    - `@base/config-ts`: `tsconfig.json` used throughout the monorepo
-    - `@base/utils-ts`: a library of TS utilities
-    - `@base/ui`: a starter package for a React component library using Storybook. It includes a few React components built with React Aria and Tailwind form Justd librarys
+    - `@mt/config-css`: Tailwind CSS base config and CSS reset and vars shared by `compose-ui` and `frontend`.
+    - `@mt/config-eslint`: `eslint` config
+    - `@mt/config-ts`: `tsconfig.json` used throughout the monorepo
+    - `@mt/utils-ts`: a library of TS utilities
+    - `@mt/compose-ui`: the React component library providing the building blocks to compose the UI of `frontend`. Using Tailwind, React Aria, shadcn and Storybook.
 
 ### 🧰 Tools
 
